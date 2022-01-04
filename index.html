@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>用户反馈论坛OA系统</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./res/img/bilibili-favicon.ico" />
+		<!-- Bootstrap -->
+		<link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- jQuery -->
+		<script src="./lib/jquery-3.6.0.min.js"></script>
+		<!-- Bootstrap Scripts -->
+		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Echarts -->
+        <script src="./lib/echarts/echarts.js"></script>
+        <!-- CSS for index page -->
+        <link href="./lib/css/index.css" rel="stylesheet" />
+        <!-- JavaScript for index page -->
+        <script src="./lib/js/index.js"></script>
+        <!-- JavaScript for chart part -->
+        <script src="./lib/js/chart.js"></script>
+		<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 col-md-9 col-lg-8 col-xl-9">
+                        <div class="header__content">
+                            <!-- header logo -->
+                            <a href="./index.html" class="header__logo">
+                                <img src="./res/img/bilibili-logo.svg" alt="">
+                            </a>
+                            <p>&nbsp;&nbsp;&nbsp;|&nbsp;用户反馈论坛OA系统</p>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">主页</a></li>
+                            <li><a href="#">数据管理</a></li>
+                            <li><a href="#">论坛管理</a></li>
+                            <li><a href="#">待做任务</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-3 col-xl-3">
+                        <!-- User Info Box -->
+                        <div class="user">
+                            <div class="user_head">
+                                <div class="user_avatar">
+                                    <img src="./app/res/img/Alan.png" weight="130" height="130" alt="">
+                                </div>
+                            </div>
+                            <div class="user_info">
+                                <h2>Alan_极蓝星辰</h2>
+                                <p>版主</p>
+                            </div>
+                            <div class="user_buttons">
+                                <a href="#" class="user_button blue"><span>个人资料</span></a>
+                                <a href="#" class="user_button red"><span>退出登录</span></a>
+                            </div>
+                            <div class="user_status">
+                                <p>当前时间:</p>
+                                <p id="user_status_time">1970/1/1 上午00:00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- data charts -->
+                    <div class="forum_charts">
+                        <div id="line_chart">
+                    </div>
+                </div>
+                </div>
+            <div>
+        </main>
+    </body>
+</html>
